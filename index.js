@@ -1,5 +1,3 @@
-'use strict';
-
 var os = require('os');
 var nodeStatic = require('node-static');
 var http = require('http');
@@ -60,7 +58,7 @@ socket.on('greeting-from-client', function (message) {
     }
   });
 
-  socket.on('ipaddr', function() {
+  /* socket.on('ipaddr', function() {
     var ifaces = os.networkInterfaces();
     for (var dev in ifaces) {
       ifaces[dev].forEach(function(details) {
@@ -69,7 +67,7 @@ socket.on('greeting-from-client', function (message) {
         }
       });
     }
-  });
+  }); */
 
   socket.on('bye', function(){
     console.log('received bye'); 
