@@ -23,10 +23,10 @@
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
   <!-- <script src="js/main.js"></script> -->
 
-  <script src="http://localhost:3005/socket.io/socket.io.js"></script>
+  <script src="https://voiceservernew.azurewebsites.net/socket.io/socket.io.js"></script>
   <script>
               //var socket = io('https://infovoiceserver.azurewebsites.net/');
-             var socket = io('http://localhost:3005');
+             var socket = io('https://voiceservernew.azurewebsites.net/');
               socket.on('greeting-from-server', function (message) {
                   document.body.appendChild(
                       document.createTextNode(message.greeting)
