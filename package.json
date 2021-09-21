@@ -1,0 +1,16 @@
+{
+  "name": "signalser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-static": "^0.7.11",
+    "socket.io": "^4.2.0"
+  }
+}
