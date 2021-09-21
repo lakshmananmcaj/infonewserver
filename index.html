@@ -2,7 +2,6 @@
 <html>
 
 <head> 
-
   
   <title>Realtime communication with WebRTC</title>
 
@@ -13,21 +12,21 @@
 
   <h1>Realtime communication server with WebRTC</h1>
 
- <!--  <div id="videos">
+   <div id="videos">
     <video id="localVideo" autoplay muted playsinline></video>
     <video id="remoteVideo" autoplay playsinline></video>
-  </div> -->
+  </div> 
 
   <!-- This file is automatically added/served when running "node index.js". -->
   <script src="/socket.io/socket.io.js"></script>
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-  <!-- <script src="js/main.js"></script> -->
+   <script src="js/main.js"></script>
 
   <!-- <script src="https://newvoiceserver.azurewebsites.net/socket.io/socket.io.js"></script> -->
   <script>
               //var socket = io('https://infovoiceserver.azurewebsites.net/');
-            // var socket = io('https://newvoiceserver.azurewebsites.net/');
-            var socket = io('https://voiceservernew.azurewebsites.net/');
+             var socket = io('http://localhost:3000/');
+           // var socket = io('https://voiceservernew.azurewebsites.net/');
               socket.on('greeting-from-server', function (message) {
                   document.body.appendChild(
                       document.createTextNode(message.greeting)
@@ -35,8 +34,7 @@
                   socket.emit('greeting-from-client', {
                       greeting: 'Hello Server'
                   });
-  
-                  
+                   
   
                   
               });

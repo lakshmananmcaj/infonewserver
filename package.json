@@ -1,16 +1,37 @@
 {
-  "name": "signalser",
-  "version": "1.0.0",
-  "description": "",
+  "name": "js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "8.9.1"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No test specified\""
+    "start": "node index.js",
+    "test": "node test.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "ejs": "^2.5.6",
     "express": "^4.17.1",
-    "node-static": "^0.7.11",
     "socket.io": "^4.2.0"
-  }
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heroku/node-js-getting-started.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heroku/node-js-getting-started/issues"
+  },
+  "homepage": "https://github.com/heroku/node-js-getting-started#readme",
+  "author": ""
 }
