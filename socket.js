@@ -4,11 +4,6 @@ const { Server } = require('socket.io');
 let IO;
 
 
-const nodeStatic = require('node-static');
-var fileServer = new(nodeStatic.Server)();
-
-
-
 module.exports.initIO = (httpServer) => {
     io = new Server(httpServer,{
     
