@@ -16,6 +16,13 @@ var app = http.createServer(function(req, res) {
 var io = socket.listen(app);
 io.sockets.on('connection', function(socket) {
 
+  socket.emit('greeting-from-server', {
+    greeting: 'Hello Client'
+});
+
+socket.on('greeting-from-client', function (message) {
+  console.log(message);
+});
   // convenience function to log server messages on the client
   function log() {
     var array = ['Message from server:'];
